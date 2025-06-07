@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 1) Ítem Home -->
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ico_home"
+        android:title="Inicio" />
+
+    <!-- 2) Ítem Favorites -->
+    <item
+        android:id="@+id/nav_favorites"
+        android:icon="@drawable/ico_search"
+        android:title="Search" />
+
+
+    <!-- 2) Ítem Orders -->
+    <item
+        android:id="@+id/nav_orders"
+        android:icon="@drawable/ico_orders"
+        android:title="Pedidos" />
+
+    <!-- 4) Ítem Profile (o Configuración) -->
+    <item
+        android:id="@+id/nav_ayuda"
+        android:icon="@drawable/ico_profile"
+        android:title="Perfil" />
+
+</menu>
