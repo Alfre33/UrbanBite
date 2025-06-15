@@ -32,9 +32,41 @@
         android:name="com.inteligentweb.urbanbiteapp.ui.ayuda.FragmentAyuda"
         android:label="@string/menu_ayuda"
         tools:layout="@layout/fragment_ayuda" />
-<!--    <fragment-->
-<!--        android:id="@+id/nav_slideshow"-->
-<!--        android:name="com.inteligentweb.urbanbiteapp.ui.slideshow.SlideshowFragment"-->
-<!--        android:label="@string/menu_logout"-->
-<!--        tools:layout="@layout/fragment_slideshow" />-->
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.inteligentweb.urbanbiteapp.ui.auth.LoginFragment"
+        android:label="@string/menu_login"
+        tools:layout="@layout/login_fragment">
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/nav_register" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_register"
+        android:name="com.inteligentweb.urbanbiteapp.ui.auth.RegisterFragmentnt"
+        android:label="@string/menu_register"
+        tools:layout="@layout/register_fragmentnt">
+        <action
+            android:id="@+id/action_register_to_login"
+            app:destination="@id/nav_login" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_welcome"
+        android:name="com.inteligentweb.urbanbiteapp.ui.welcome.WelcomeFragment"
+        android:label="@string/menu_welcome"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcome_to_login"
+            app:destination="@id/nav_login" />
+        <action
+            android:id="@+id/action_welcome_to_register"
+            app:destination="@id/nav_register" />
+    </fragment>
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/nav_slideshow"-->
+    <!--        android:name="com.inteligentweb.urbanbiteapp.ui.slideshow.SlideshowFragment"-->
+    <!--        android:label="@string/menu_logout"-->
+    <!--        tools:layout="@layout/fragment_slideshow" />-->
 </navigation>
